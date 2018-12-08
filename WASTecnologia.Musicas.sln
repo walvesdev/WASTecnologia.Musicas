@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASTecnologia.Musicas.Web", "WASTecnologia.Musicas.Web\WASTecnologia.Musicas.Web.csproj", "{07FFE693-DFDF-45B6-B822-07ECB55DB31D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{A337B330-F098-4BF7-9BA9-0C372921667A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASTecnologia.Musicas.Dominio", "WASTecnologia.Musicas.Dominio\WASTecnologia.Musicas.Dominio.csproj", "{F7C4BE13-457B-43D4-8A25-E5CC435F9ED0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Acesso a Dados", "Acesso a Dados", "{ED824BAA-F0CE-40B9-913F-F2D234E87AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASTecnologia.Musicas.AcessoDados.EF", "WASTecnologia.Musicas.AcessoDados.EF\WASTecnologia.Musicas.AcessoDados.EF.csproj", "{5EEFD571-EF86-42F7-9419-2DF26FA8D72B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASTecnologia.Comum.Entity", "WASTecnologia.Comum.Entity\WASTecnologia.Comum.Entity.csproj", "{28877525-6953-423D-B920-EC9F1D01C2B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +25,26 @@ Global
 		{07FFE693-DFDF-45B6-B822-07ECB55DB31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07FFE693-DFDF-45B6-B822-07ECB55DB31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07FFE693-DFDF-45B6-B822-07ECB55DB31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C4BE13-457B-43D4-8A25-E5CC435F9ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C4BE13-457B-43D4-8A25-E5CC435F9ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C4BE13-457B-43D4-8A25-E5CC435F9ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C4BE13-457B-43D4-8A25-E5CC435F9ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEFD571-EF86-42F7-9419-2DF26FA8D72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EEFD571-EF86-42F7-9419-2DF26FA8D72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EEFD571-EF86-42F7-9419-2DF26FA8D72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EEFD571-EF86-42F7-9419-2DF26FA8D72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28877525-6953-423D-B920-EC9F1D01C2B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28877525-6953-423D-B920-EC9F1D01C2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28877525-6953-423D-B920-EC9F1D01C2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28877525-6953-423D-B920-EC9F1D01C2B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7C4BE13-457B-43D4-8A25-E5CC435F9ED0} = {A337B330-F098-4BF7-9BA9-0C372921667A}
+		{5EEFD571-EF86-42F7-9419-2DF26FA8D72B} = {ED824BAA-F0CE-40B9-913F-F2D234E87AA2}
+		{28877525-6953-423D-B920-EC9F1D01C2B2} = {ED824BAA-F0CE-40B9-913F-F2D234E87AA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {979E3396-B753-4E97-8361-A2F56F6A9953}

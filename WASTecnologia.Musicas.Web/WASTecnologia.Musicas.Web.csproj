@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -126,6 +132,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AlbunsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -168,6 +175,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Albuns\Create.cshtml" />
+    <Content Include="Views\Albuns\Delete.cshtml" />
+    <Content Include="Views\Albuns\Details.cshtml" />
+    <Content Include="Views\Albuns\Edit.cshtml" />
+    <Content Include="Views\Albuns\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -185,6 +197,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WASTecnologia.Comum.Entity\WASTecnologia.Comum.Entity.csproj">
+      <Project>{28877525-6953-423d-b920-ec9f1d01c2b2}</Project>
+      <Name>WASTecnologia.Comum.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WASTecnologia.Musicas.AcessoDados.EF\WASTecnologia.Musicas.AcessoDados.EF.csproj">
+      <Project>{5eefd571-ef86-42f7-9419-2df26fa8d72b}</Project>
+      <Name>WASTecnologia.Musicas.AcessoDados.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WASTecnologia.Musicas.Dominio\WASTecnologia.Musicas.Dominio.csproj">
+      <Project>{f7c4be13-457b-43d4-8a25-e5cc435f9ed0}</Project>
+      <Name>WASTecnologia.Musicas.Dominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
