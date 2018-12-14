@@ -21,6 +21,7 @@ namespace WASTecnologia.Musicas.AcessoDados.EF.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Roda a geracao da tabelas (Migrations) de acordo com as configurações feitas atraves da TypeConfiguration
             modelBuilder.Configurations.Add(new AlbumTypeConfig());
 
         }

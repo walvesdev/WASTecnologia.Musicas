@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace WASTecnologia.Comum.Entity
 {
+
+    //Padrão para criação das tabelas do banco de dados usando Fluent API
+
     public abstract class EntityAbstractConfig<T> : EntityTypeConfiguration<T> where T : class
     {
         public EntityAbstractConfig()

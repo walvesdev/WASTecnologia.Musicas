@@ -8,6 +8,7 @@ using WASTecnologia.Musicas.Web.Filtros;
 namespace WASTecnologia.Musicas.Web.Controllers
 {
     [LogResultFilter]
+    [Authorize] 
     public class HomeController : Controller
     {
         [LogActionFilter]
@@ -15,7 +16,7 @@ namespace WASTecnologia.Musicas.Web.Controllers
         {
             return View();
         }
-
+        [Authorize(Roles = "ADMIN")]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

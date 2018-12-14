@@ -8,6 +8,8 @@ using WASTecnologia.Musicas.Dominio;
 
 namespace WASTecnologia.Musicas.AcessoDados.EF.TypeConfiguration
 {
+    //Implementação da criação de tabela usando Fluent API
+
     class AlbumTypeConfig : EntityAbstractConfig<Album>
     {
         protected override void ConfigurarCamposTabela()

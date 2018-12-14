@@ -1,0 +1,8 @@
+﻿@model WASTecnologia.Musicas.Dominio.Album
+
+@Html.ActionLink("Details", "Details", new { id = Model.Id }) |
+@if (User.IsInRole("ADMIN"))
+{
+    <a href="@Url.Action("Edit", "Albuns")">Edit | </a>
+    <a href="@Url.Action("Delete", "Albuns")">Delete </a>
+}
